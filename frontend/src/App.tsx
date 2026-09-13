@@ -32,7 +32,7 @@ export default function App() {
  const isRelease=trace?.parameters.mode==='release';
  const searchRef=useRef<HTMLInputElement>(null),requestId=useRef(0);
  const dirty=trace&&JSON.stringify(params)!==JSON.stringify(trace.parameters);
- const go=(p:Page)=>{setPage(p);setSidebar(false);setError('');};
+ const go=(p:Page)=>{if(p==='simulation')setQueryId(null);setPage(p);setSidebar(false);setError('');};
  const fail=(e:unknown)=>setError(e instanceof Error?e.message:String(e));
  const notify=(message:string)=>{setToast(message);};
 
@@ -54,7 +54,7 @@ export default function App() {
  function changeSpecies(species:Params['species']){setParams(p=>({...p,species,source_id:p.mode==='release'?'':p.source_id.replace(/demo-(male|female)-/,'demo-'+species+'-')}));setSearch('');}
  function changeMode(mode:Params['mode']){const p={...initial,species:params.species,mode};setParams(p);void runTrace(p);}
  function preset(circuit:Params['circuit']){const p:Params={...initial,circuit,mode:circuit==='courtship'?'synthetic':params.mode,species:params.species,target_region:circuit==='escape'?'Leg motor pool':'Wing motor pool'};setParams(p);void runTrace(p);}
- function save(){if(!queryId)return;const item={id:queryId,label:titles[page]+' · '+short(trace?.parameters.source_id||'S01'),date:new Date().toISOString()};const next=[item,...saved.filter(s=>s.id!==queryId)].slice(0,30);try{localStorage.setItem('pathatlas-saved',JSON.stringify(next));setSaved(next);notify('Experiment saved in this browser.');}catch{setError('Browser storage unavailable. Export the experiment instead.');}}
+ function save(){if(!queryId)return;const item={id:queryId,label:(page==='simulation'?'Synthetic model':titles[page])+' · '+short(trace?.parameters.source_id||'S01'),date:new Date().toISOString()};const next=[item,...saved.filter(s=>s.id!==queryId)].slice(0,30);try{localStorage.setItem('pathatlas-saved',JSON.stringify(next));setSaved(next);notify('Experiment saved in this browser.');}catch{setError('Browser storage unavailable. Export the experiment instead.');}}
  async function restore(item:Saved){setBusy(true);setError('');try{const r=await api<Trace>(`/export?query_id=${item.id}`);if(r.kind==='pathway'){setParams(r.parameters);setTrace(r);setNode(null);setRoute(null);setSelected([]);setLesion(null);setPair(null);setDiff(null);setStats(null);setQueryId(r.query_id);go('explorer');}else{download(item.id);notify('Exact saved result exported as JSON.');}}catch(e){fail(e);}finally{setBusy(false);}}
  /** Recompute bounded structural routes; a virtual lesion is not a behavioral experiment. */
  async function runLesion(){if(!trace||!selected.length)return;setBusy(true);setError('');try{const result=await api<Lesion>('/knockout',{path_id:trace.query_id,neuron_ids:selected,controls,seed});setLesion(result);setQueryId(result.query_id);}catch(e){fail(e);}finally{setBusy(false);}}
