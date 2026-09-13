@@ -13,6 +13,7 @@ from fastapi.staticfiles import StaticFiles
 from .config import CAVEAT, SOURCES, provenance
 from .schemas import Species, Scheme, KnockoutRequest
 from .data.cache_build import ensure_cache, load_subgraph, save_query, read_query
+from .data.releases import release, catalog, circuit_contracts
 from .graph.pathfinding import graph_from, top_paths
 from .graph.perturbation import knockout
 from .graph.crosssex_diff import scoped_diff
@@ -27,7 +28,7 @@ async def lifespan(app):
     yield
 
 
-app = FastAPI(title='PathAtlas',version='0.1.0',description=CAVEAT,lifespan=lifespan)
+app = FastAPI(title='PathAtlas',version='0.3.0',description=CAVEAT,lifespan=lifespan)
 
 
 def stored(query_id, expected=None):
@@ -40,40 +41,98 @@ def stored(query_id, expected=None):
     return result
 
 
+Mode = Literal['synthetic', 'release', 'live']
+
+
+def dataset(species, circuit, mode, min_weight=1):
+    """Never silently substitute synthetic data for an unavailable release."""
+    if mode == 'live':
+        raise HTTPException(503, 'Live authenticated queries are not configured. Select an attributed release snapshot explicitly.')
+    if mode == 'synthetic':
+        nodes, edges = load_subgraph(species, circuit, min_weight)
+        return nodes, edges, provenance()
+    try:
+        result = release(species, circuit)
+    except ValueError as exc:
+        raise HTTPException(503, str(exc)) from exc
+    return result['nodes'], [e for e in result['edges'] if e['weight'] >= min_weight], result['provenance']
+
+
 @app.get('/api/health')
 def health():
-    return {'status':'ok','mode':'synthetic','version':'0.1.0'}
+    return {'status': 'ok', 'mode': 'release+synthetic', 'version': '0.3.0',
+            'release_available': {r['species']: r['available'] for r in catalog()}}
+
+
+@app.get('/api/datasets')
+def datasets():
+    return {'datasets': catalog(), 'caveat': CAVEAT}
 
 
 @app.get('/api/sources')
 def sources():
-    return {'sources':SOURCES,'provenance':provenance(), 'gates':[
-        {'name':'Synthetic graph regression tests','status':'available','detail':'Run pytest to verify the current checkout.'},
-        {'name':'MaleCNS giant-fiber incoming synapse check','status':'blocked','detail':'Requires neuPrint token and verified body ID; the ~25,000 literature number has not been reproduced.'},
-        {'name':'BANC pathway identity review','status':'blocked','detail':'Requires version-pinned subgraph and curated neuron correspondences. A coordinate transform alone is not identity.'},
-        {'name':'Courtship recording validation','status':'blocked','detail':'Requires real extracted circuit, licensed recording, and preregistered metrics.'}]}
+    checks = circuit_contracts()
+    return {'sources': SOURCES, 'provenance': provenance(), 'gates': [
+        {'name': c['name'], 'status': c['status'],
+         'detail': c.get('detail', f"Observed: {c.get('observed', 'see contract')}. Expected: {c.get('expected', '')}")}
+        for c in checks]}
+
+
+@app.get('/api/validation/contracts')
+def contracts():
+    return save_query({'kind': 'contracts', 'parameters': {'scope': 'bundled escape snapshots'},
+                       'checks': circuit_contracts(), 'datasets': catalog(),
+                       'provenance': {'mode': 'release', 'dataset': 'MaleCNS + BANC',
+                                      'version': 'v1.0 / v888', 'caveat': CAVEAT,
+                                      'limitations': ['Structural contracts are not behavioral validation.']}})
 
 
 @app.get('/api/neurons/search')
-def search(query: str = Query('',max_length=100), species: Species = 'male', circuit: Literal['escape','courtship']='escape'):
-    nodes,_ = load_subgraph(species,circuit)
-    return {'neurons':[n for n in nodes if query.lower() in f"{n['id']} {n['label']} {n['role']}".lower()], 'provenance':provenance()}
+def search(query: str = Query('', max_length=100), species: Species = 'male',
+           circuit: Literal['escape', 'courtship'] = 'escape', mode: Mode = 'release'):
+    nodes, _, evidence = dataset(species, circuit, mode)
+    return {'neurons': [n for n in nodes if query.lower() in
+                       f"{n['id']} {n['label']} {n['role']} {n.get('type', '')}".lower()],
+            'provenance': evidence, 'scope': 'Bounded snapshot only, not a full-dataset search.'}
 
 
 @app.get('/api/pathway')
-def pathway(source_id: str = Query('demo-male-S01',max_length=100), target_region: Literal['Leg motor pool','Wing motor pool']='Leg motor pool', species: Species='male', max_hops: int=Query(5,ge=1,le=8), top_k: int=Query(5,ge=1,le=20), min_weight: int=Query(1,ge=1,le=1000), circuit: Literal['escape','courtship']='escape', mode: Literal['synthetic','live']='synthetic'):
-    if mode == 'live':
-        raise HTTPException(503,'Real-data validation gate is not passed. Use authenticated ingestion CLI; demo data will never substitute for a live request.')
-    nodes,edges = load_subgraph(species,circuit,min_weight)
-    graph = graph_from(nodes,edges)
+def pathway(source_id: str = Query('', max_length=100),
+            target_region: Literal['Leg motor pool', 'Wing motor pool'] = 'Leg motor pool',
+            species: Species = 'male', max_hops: int = Query(5, ge=1, le=8),
+            top_k: int = Query(5, ge=1, le=20), min_weight: int = Query(1, ge=1, le=1000),
+            circuit: Literal['escape', 'courtship'] = 'escape', mode: Mode = 'release'):
+    nodes, edges, evidence = dataset(species, circuit, mode, min_weight)
+    if not source_id:
+        source_id = release(species, circuit)['default_source'] if mode == 'release' else f'demo-{species}-S01'
+    graph = graph_from(nodes, edges)
     if source_id not in graph:
-        raise HTTPException(404,'Source not present in this dataset. No match was inferred.')
-    targets = [n['id'] for n in nodes if n['stage']==4 and n['region']==target_region]
-    paths,truncated = top_paths(graph,source_id,targets,max_hops,top_k)
-    parameters = dict(source_id=source_id,target_region=target_region,species=species,max_hops=max_hops,top_k=top_k,min_weight=min_weight,circuit=circuit)
-    return save_query({'kind':'pathway','parameters':parameters,'nodes':nodes,'edges':edges,'paths':paths,'targets':targets,
-                       'search_truncated':truncated, 'ranking':'Ascending sum(1 / synthetic synapse count). Strength proxy = 1 / cost. Sign is not used to infer functional transmission.',
-                       'provenance':provenance()})
+        raise HTTPException(404, 'Source is not present in this snapshot. No match was inferred.')
+    targets = [n['id'] for n in nodes if n['stage'] == 4 and n['region'] == target_region]
+    paths, truncated = top_paths(graph, source_id, targets, max_hops, top_k)
+    parameters = dict(source_id=source_id, target_region=target_region, species=species,
+                      max_hops=max_hops, top_k=top_k, min_weight=min_weight, circuit=circuit, mode=mode)
+    return save_query({'kind': 'pathway', 'parameters': parameters, 'nodes': nodes, 'edges': edges,
+                       'paths': paths, 'targets': targets, 'search_truncated': truncated,
+                       'ranking': 'Ascending sum(1 / count). Strength proxy = 1 / cost; not physiological strength. Sign is not used to infer functional transmission.',
+                       'provenance': evidence})
+
+
+@app.get('/api/pathway/candidates')
+def candidates(path_id: str):
+    """Return same-annotation candidates for manual choice, never assert cell identity."""
+    trace = stored(path_id, 'pathway')
+    p = trace['parameters']
+    other = 'female' if p['species'] == 'male' else 'male'
+    nodes, _, evidence = dataset(other, p['circuit'], p['mode'])
+    source = next(n for n in trace['nodes'] if n['id'] == p['source_id'])
+    if p['mode'] == 'synthetic':
+        matches = [n for n in nodes if n['label'] == source['label']]
+    else:
+        matches = [n for n in nodes if n.get('type') and n['type'] == source.get('type')]
+    return {'species': other, 'candidates': matches, 'provenance': evidence,
+            'confidence': 'unvalidated',
+            'note': 'Same-type candidates only. Select a source explicitly; no anatomical registration or cell identity is implied.'}
 
 
 @app.post('/api/knockout')
@@ -85,7 +144,7 @@ def lesion(request: KnockoutRequest):
         raise HTTPException(422,'Selected neuron is outside this subgraph.')
     p = trace['parameters']
     result = knockout(graph,p['source_id'],trace['targets'],request.neuron_ids,p['max_hops'],p['top_k'],request.seed,request.controls)
-    return save_query({'kind':'knockout','path_id':request.path_id,'parameters':request.model_dump(),**result,'provenance':provenance()})
+    return save_query({'kind':'knockout','path_id':request.path_id,'parameters':request.model_dump(),**result,'provenance':trace['provenance']})
 
 
 @app.get('/api/pathway/diff')
@@ -95,13 +154,13 @@ def difference(male_path_id: str, female_path_id: str):
         result = scoped_diff(a,b)
     except ValueError as e:
         raise HTTPException(422,str(e))
-    return save_query({'kind':'diff','parameters':{'male_path_id':male_path_id,'female_path_id':female_path_id},**result,'provenance':provenance()})
+    return save_query({'kind':'diff','parameters':{'male_path_id':male_path_id,'female_path_id':female_path_id},**result,'provenance':{'mode':a['provenance']['mode'],'dataset':'Pathway-scoped specimen comparison','version':a['provenance']['version']+' / '+b['provenance']['version'],'caveat':CAVEAT,'limitations':list(dict.fromkeys(a['provenance']['limitations']+b['provenance']['limitations'])),'inputs':[a['provenance'],b['provenance']]}})
 
 
 @app.get('/api/stats/motif')
 def stats(subgraph_id: str):
     trace = stored(subgraph_id,'pathway')
-    return save_query({'kind':'stats','parameters':{'subgraph_id':subgraph_id},**motif_stats(graph_from(trace['nodes'],trace['edges'])),'provenance':provenance()})
+    return save_query({'kind':'stats','parameters':{'subgraph_id':subgraph_id},**motif_stats(graph_from(trace['nodes'],trace['edges'])),'provenance':trace['provenance']})
 
 
 @app.get('/api/circuit/courtship/simulate')
@@ -155,7 +214,7 @@ def export(query_id: str, format: Literal['json','csv']='json'):
     return Response(output.getvalue(),media_type='text/csv',headers=headers)
 
 
-DIST = Path(__file__).resolve().parents[2].parent / 'frontend' / 'dist'
+DIST = Path(__file__).resolve().parents[2] / 'frontend' / 'dist'
 if DIST.exists():
     app.mount('/assets',StaticFiles(directory=DIST/'assets'),name='assets')
     @app.get('/')
