@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Activity, ArrowDownToLine, ArrowLeftRight, ArrowRight, ArrowUpRight, AudioLines, BookOpen, Check, ChevronDown, ChevronRight, CircleHelp, Clock3, Database, ExternalLink, FlaskConical, GitBranch, Layers3, Menu, Microscope, Network, RefreshCw, Search, ShieldCheck, SlidersHorizontal, Sparkles, Target, Trash2, X, Zap } from 'lucide-react';
+import { Activity, ArrowDownToLine, ArrowLeftRight, ArrowRight, ArrowUpRight, AudioLines, BookOpen, Check, ChevronDown, ChevronRight, CircleHelp, Clock3, ExternalLink, FlaskConical, GitBranch, Layers3, Menu, Microscope, Network, RefreshCw, Search, ShieldCheck, SlidersHorizontal, Sparkles, Trash2, X, Zap } from 'lucide-react';
 import { api, download, short, traceQuery } from './api/client';
 import type { Difference, Lesion, Neuron, Params, Sources, Stats, Tab, Trace } from './api/client';
 import { SubwayMap } from './components/SubwayMap';
