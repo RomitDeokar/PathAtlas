@@ -85,19 +85,22 @@ def build(species):
             db.execute('''CREATE VIEW edges AS SELECT CAST(body_pre AS VARCHAR) AS source,
                 CAST(body_post AS VARCHAR) AS target, weight FROM raw_edges''')
         else:
-            db.execute('''CREATE VIEW neurons AS SELECT root_id AS id, cell_type AS type,
+            db.execute('''CREATE VIEW neurons AS SELECT CAST(root_id AS VARCHAR) AS id, cell_type AS type,
                 cell_type AS instance, super_class AS category,
                 CASE side WHEN 'left' THEN 'L' WHEN 'right' THEN 'R' ELSE side END AS side,
                 NULL::BIGINT AS manc_id, manc_cell_type AS manc_type,
                 neurotransmitter_predicted_v3 AS transmitter, malecns_match AS candidate_male_id,
                 status FROM annotations''')
-            db.execute('''CREATE VIEW edges AS SELECT pre AS source, post AS target,
+            db.execute('''CREATE VIEW edges AS SELECT CAST(pre AS VARCHAR) AS source, CAST(post AS VARCHAR) AS target,
                 count AS weight FROM raw_edges''')
         gf = db.execute("SELECT id FROM neurons WHERE type='DNp01' ORDER BY id").fetchnumpy()['id'].tolist()
         if len(gf) != 2:
             raise ValueError('Expected exactly two annotated DNp01 cells; review release before continuing.')
-        checks = db.execute('''SELECT target AS body_id, SUM(weight) AS incoming_synapses,
-            COUNT(DISTINCT source) AS presynaptic_bodies FROM edges
+        # Materialize the tiny GF neighborhood once instead of rescanning gigabytes per cell.
+        db.execute('''CREATE TEMP TABLE gf_edges AS SELECT * FROM edges
+            WHERE source IN (SELECT unnest(?)) OR target IN (SELECT unnest(?))''', [gf, gf])
+        checks = db.execute('''SELECT target AS body_id, SUM(weight)::BIGINT AS incoming_synapses,
+            COUNT(DISTINCT source) AS presynaptic_bodies FROM gf_edges
             WHERE target IN (SELECT unnest(?)) GROUP BY target ORDER BY target''', [gf]).to_arrow_table().to_pylist()
         selected = set(gf)
         # The selection contract is explicit: four strongest LPLC2 and four LC4
@@ -105,10 +108,10 @@ def build(species):
         # and all annotated TTMn motor cells. It is not a complete circuit.
         for g in gf:
             for typ in ['LPLC2', 'LC4']:
-                rows = db.execute('''SELECT e.source FROM edges e JOIN neurons n ON n.id=e.source
+                rows = db.execute('''SELECT e.source FROM gf_edges e JOIN neurons n ON n.id=e.source
                     WHERE e.target=? AND n.type=? ORDER BY e.weight DESC,e.source LIMIT 4''', [g, typ]).fetchall()
                 selected.update(r[0] for r in rows)
-            rows = db.execute('''SELECT e.target FROM edges e JOIN neurons n ON n.id=e.target
+            rows = db.execute('''SELECT e.target FROM gf_edges e JOIN neurons n ON n.id=e.target
                 WHERE e.source=? AND n.category IN ('vnc_intrinsic','ventral_nerve_cord_intrinsic')
                 ORDER BY e.weight DESC,e.target LIMIT 6''', [g]).fetchall()
             selected.update(r[0] for r in rows)
