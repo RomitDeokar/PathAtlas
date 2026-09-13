@@ -2,6 +2,7 @@
 from functools import lru_cache
 from threading import Lock
 import numpy as np
+import brian2 as b
 from ..data.fixtures import fixture
 
 _LOCK = Lock()
@@ -10,7 +11,6 @@ _LOCK = Lock()
 @lru_cache(maxsize=24)
 def simulate(scheme='synapse_count', tau_ms=20, min_weight=0):
     """Model synthetic spikes. Sonification does not represent recorded fly song."""
-    import brian2 as b
     with _LOCK:
         b.prefs.codegen.target = 'numpy'
         clock = b.Clock(dt=.2*b.ms)
