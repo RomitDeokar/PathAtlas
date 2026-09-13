@@ -1,0 +1,18 @@
+import { ArrowUpRight, Check, Copy, Database, Download, ExternalLink, Fingerprint, Info, ShieldCheck } from 'lucide-react';
+import { useState } from 'react';
+import type { Trace, Neuron } from '../api/client';
+import { download } from '../api/client';
+export function EvidencePanel({trace,node,queryId,onEvidence,onViewer}:{trace:Trace|null;node:Neuron|null;queryId:string|null;onEvidence:()=>void;onViewer:()=>void}) {
+ const [copied,setCopied]=useState(false);
+ const copy = async()=>{if(!queryId)return;try{await navigator.clipboard.writeText(queryId);setCopied(true);setTimeout(()=>setCopied(false),2000);}catch{setCopied(false);}};
+ return <aside className="evidence-rail"><section className="panel evidence-panel"><div className="panel-heading"><h3><ShieldCheck size={16}/> Evidence & context</h3><span className="tiny-dot"/></div>
+  <div className="evidence-body"><div className="overline">DATA PROVENANCE</div><div className="provenance-source"><span className="square-icon"><Database size={17}/></span><div><strong>Synthetic fixture</strong><span>PathAtlas · v1.0</span></div><span className="badge amber-badge">DEMO</span></div>
+  <div className="evidence-rule"/><div className="overline">ACTIVE QUERY</div><dl className="query-list"><dt>Specimen template</dt><dd>{trace?.parameters.species==='female'?'Female':'Male'}</dd><dt>Source</dt><dd className="mono">{trace?.parameters.source_id.split('-').at(-1)||'—'}</dd><dt>Target</dt><dd>{trace?.parameters.target_region.replace(' motor pool','')||'—'} motor pool</dd><dt>Maximum hops</dt><dd>{trace?.parameters.max_hops||'—'}</dd><dt>Minimum count</dt><dd>{trace?.parameters.min_weight||'—'}</dd><dt>Requested routes</dt><dd>{trace?.parameters.top_k||'—'}</dd></dl>
+  <div className="evidence-rule"/><div className="overline">RESEARCH STATUS</div><div className="status-note"><span className="status-ring"/><div><strong>Biological validation pending</strong><p>Fixture data tests the tools, not the biology. Real connectivity is not loaded.</p></div></div>
+  <button className="text-link full" onClick={onEvidence}>Inspect sources & validation gates <ArrowUpRight size={14}/></button></div>
+  <div className="evidence-caveat"><Info size={16}/><p>This shows structural connectivity, not proven behavioral function.</p></div>
+  <div className="export-block"><div className="overline">REPRODUCIBLE BY DESIGN</div><button className="query-id" title="Copy query identifier" onClick={copy} disabled={!queryId}><Fingerprint size={13}/>{queryId?queryId.slice(0,16):'No query yet'}{copied?<Check size={13}/>:<Copy size={13}/>}</button><div className="export-buttons"><button disabled={!queryId} onClick={()=>queryId&&download(queryId)}><Download size={13}/> JSON</button><button disabled={!queryId} onClick={()=>queryId&&download(queryId,'csv')}><Download size={13}/> CSV</button></div></div>
+ </section>
+ <section className="panel inspect-panel"><div className="panel-heading"><h3>Cell inspector</h3><span className="mono muted">{node?.label||'—'}</span></div><div className="evidence-body">{node?<><span className="badge green-badge">{node.role}</span><h2 className="inspector-label">{node.label}<span>fixture neuron</span></h2><p className="mono tiny wrap">{node.id}</p><dl className="query-list"><dt>Transmitter sign</dt><dd>{node.nt}</dd><dt>Biological ID</dt><dd>Not assigned</dd><dt>Muscle mapping</dt><dd>Unverified</dd></dl></>:<p className="muted">Select a node on the map to inspect its metadata.</p>}<button className="button secondary full viewer-button" onClick={onViewer}>3D verification <ExternalLink size={13}/></button><p className="tiny muted">Synthetic cells have no EM geometry.</p></div></section>
+ </aside>;
+}
