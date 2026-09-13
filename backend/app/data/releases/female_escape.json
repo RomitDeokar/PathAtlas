@@ -1,0 +1,1548 @@
+{
+  "circuit": "escape",
+  "default_source": "720575941511886412",
+  "edges": [
+    {
+      "sign": "unknown",
+      "source": "720575941408509867",
+      "synthetic": false,
+      "target": "720575941449449294",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941408509867",
+      "synthetic": false,
+      "target": "720575941476434996",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941408509867",
+      "synthetic": false,
+      "target": "720575941517770412",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941408509867",
+      "synthetic": false,
+      "target": "720575941590734443",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941408509867",
+      "synthetic": false,
+      "target": "720575941602261182",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941432528265",
+      "synthetic": false,
+      "target": "720575941509145950",
+      "weight": 11
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941432528265",
+      "synthetic": false,
+      "target": "720575941612750922",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941436617870",
+      "synthetic": false,
+      "target": "720575941476218154",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941436617870",
+      "synthetic": false,
+      "target": "720575941494320304",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941436617870",
+      "synthetic": false,
+      "target": "720575941509145950",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941437649471",
+      "synthetic": false,
+      "target": "720575941451068597",
+      "weight": 10
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941437649471",
+      "synthetic": false,
+      "target": "720575941510443986",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941437649471",
+      "synthetic": false,
+      "target": "720575941511886412",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941437649471",
+      "synthetic": false,
+      "target": "720575941530742475",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941437649471",
+      "synthetic": false,
+      "target": "720575941582578527",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941449449294",
+      "synthetic": false,
+      "target": "720575941408509867",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941449449294",
+      "synthetic": false,
+      "target": "720575941530169803",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941449449294",
+      "synthetic": false,
+      "target": "720575941564627766",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941449449294",
+      "synthetic": false,
+      "target": "720575941590734443",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941449449294",
+      "synthetic": false,
+      "target": "720575941602261182",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941449449294",
+      "synthetic": false,
+      "target": "720575941642542241",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941451068597",
+      "synthetic": false,
+      "target": "720575941408509867",
+      "weight": 8
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941451068597",
+      "synthetic": false,
+      "target": "720575941437649471",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941451068597",
+      "synthetic": false,
+      "target": "720575941449449294",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941451068597",
+      "synthetic": false,
+      "target": "720575941475711518",
+      "weight": 9
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941451068597",
+      "synthetic": false,
+      "target": "720575941495634816",
+      "weight": 9
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941451068597",
+      "synthetic": false,
+      "target": "720575941497009058",
+      "weight": 5
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941451068597",
+      "synthetic": false,
+      "target": "720575941500579913",
+      "weight": 12
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941451068597",
+      "synthetic": false,
+      "target": "720575941517770412",
+      "weight": 20
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941451068597",
+      "synthetic": false,
+      "target": "720575941530169803",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941451068597",
+      "synthetic": false,
+      "target": "720575941559285619",
+      "weight": 10
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941451068597",
+      "synthetic": false,
+      "target": "720575941564627766",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941451068597",
+      "synthetic": false,
+      "target": "720575941575610201",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941451068597",
+      "synthetic": false,
+      "target": "720575941590734443",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941451068597",
+      "synthetic": false,
+      "target": "720575941602261182",
+      "weight": 9
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941451068597",
+      "synthetic": false,
+      "target": "720575941642542241",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941468551901",
+      "synthetic": false,
+      "target": "720575941451068597",
+      "weight": 8
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941475711518",
+      "synthetic": false,
+      "target": "720575941408509867",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941475711518",
+      "synthetic": false,
+      "target": "720575941497009058",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941475711518",
+      "synthetic": false,
+      "target": "720575941590734443",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941476218154",
+      "synthetic": false,
+      "target": "720575941436617870",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941476218154",
+      "synthetic": false,
+      "target": "720575941509145950",
+      "weight": 7
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941476218154",
+      "synthetic": false,
+      "target": "720575941587015814",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941494320304",
+      "synthetic": false,
+      "target": "720575941436617870",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941494320304",
+      "synthetic": false,
+      "target": "720575941476218154",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941494320304",
+      "synthetic": false,
+      "target": "720575941509145950",
+      "weight": 8
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941494320304",
+      "synthetic": false,
+      "target": "720575941575071560",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941494320304",
+      "synthetic": false,
+      "target": "720575941587015814",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941495634816",
+      "synthetic": false,
+      "target": "720575941451068597",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941495634816",
+      "synthetic": false,
+      "target": "720575941475711518",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941500579913",
+      "synthetic": false,
+      "target": "720575941451068597",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941509145950",
+      "synthetic": false,
+      "target": "720575941408509867",
+      "weight": 8
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941509145950",
+      "synthetic": false,
+      "target": "720575941449449294",
+      "weight": 10
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941509145950",
+      "synthetic": false,
+      "target": "720575941451068597",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941509145950",
+      "synthetic": false,
+      "target": "720575941475711518",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941509145950",
+      "synthetic": false,
+      "target": "720575941476434996",
+      "weight": 5
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941509145950",
+      "synthetic": false,
+      "target": "720575941494320304",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941509145950",
+      "synthetic": false,
+      "target": "720575941495634816",
+      "weight": 5
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941509145950",
+      "synthetic": false,
+      "target": "720575941497009058",
+      "weight": 10
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941509145950",
+      "synthetic": false,
+      "target": "720575941517770412",
+      "weight": 7
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941509145950",
+      "synthetic": false,
+      "target": "720575941530169803",
+      "weight": 10
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941509145950",
+      "synthetic": false,
+      "target": "720575941559285619",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941509145950",
+      "synthetic": false,
+      "target": "720575941564627766",
+      "weight": 10
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941509145950",
+      "synthetic": false,
+      "target": "720575941587015814",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941509145950",
+      "synthetic": false,
+      "target": "720575941590734443",
+      "weight": 12
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941509145950",
+      "synthetic": false,
+      "target": "720575941642542241",
+      "weight": 14
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941510443986",
+      "synthetic": false,
+      "target": "720575941451068597",
+      "weight": 10
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941510443986",
+      "synthetic": false,
+      "target": "720575941511886412",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941510443986",
+      "synthetic": false,
+      "target": "720575941530742475",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941510443986",
+      "synthetic": false,
+      "target": "720575941652023317",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941511886412",
+      "synthetic": false,
+      "target": "720575941437649471",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941511886412",
+      "synthetic": false,
+      "target": "720575941451068597",
+      "weight": 15
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941511886412",
+      "synthetic": false,
+      "target": "720575941510443986",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941517770412",
+      "synthetic": false,
+      "target": "720575941408509867",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941517770412",
+      "synthetic": false,
+      "target": "720575941497009058",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941517770412",
+      "synthetic": false,
+      "target": "720575941500579913",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941530169803",
+      "synthetic": false,
+      "target": "720575941449449294",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941530169803",
+      "synthetic": false,
+      "target": "720575941590734443",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941530169803",
+      "synthetic": false,
+      "target": "720575941642542241",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941530742475",
+      "synthetic": false,
+      "target": "720575941451068597",
+      "weight": 10
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941530742475",
+      "synthetic": false,
+      "target": "720575941510443986",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941530742475",
+      "synthetic": false,
+      "target": "720575941511886412",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941559285619",
+      "synthetic": false,
+      "target": "720575941451068597",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941559285619",
+      "synthetic": false,
+      "target": "720575941509145950",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941559285619",
+      "synthetic": false,
+      "target": "720575941590734443",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941559285619",
+      "synthetic": false,
+      "target": "720575941642542241",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941564627766",
+      "synthetic": false,
+      "target": "720575941449449294",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941564627766",
+      "synthetic": false,
+      "target": "720575941476434996",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941564627766",
+      "synthetic": false,
+      "target": "720575941495634816",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941564627766",
+      "synthetic": false,
+      "target": "720575941590734443",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941569787130",
+      "synthetic": false,
+      "target": "720575941432528265",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941569787130",
+      "synthetic": false,
+      "target": "720575941509145950",
+      "weight": 7
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941575071560",
+      "synthetic": false,
+      "target": "720575941432528265",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941575071560",
+      "synthetic": false,
+      "target": "720575941509145950",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941575071560",
+      "synthetic": false,
+      "target": "720575941569787130",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941575610201",
+      "synthetic": false,
+      "target": "720575941451068597",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941582578527",
+      "synthetic": false,
+      "target": "720575941451068597",
+      "weight": 8
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941587015814",
+      "synthetic": false,
+      "target": "720575941436617870",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941587015814",
+      "synthetic": false,
+      "target": "720575941476218154",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941587015814",
+      "synthetic": false,
+      "target": "720575941494320304",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941587015814",
+      "synthetic": false,
+      "target": "720575941509145950",
+      "weight": 12
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941590734443",
+      "synthetic": false,
+      "target": "720575941449449294",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941590734443",
+      "synthetic": false,
+      "target": "720575941475711518",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941590734443",
+      "synthetic": false,
+      "target": "720575941476434996",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941590734443",
+      "synthetic": false,
+      "target": "720575941495634816",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941590734443",
+      "synthetic": false,
+      "target": "720575941500579913",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941590734443",
+      "synthetic": false,
+      "target": "720575941517770412",
+      "weight": 10
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941590734443",
+      "synthetic": false,
+      "target": "720575941530169803",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941590734443",
+      "synthetic": false,
+      "target": "720575941564627766",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941612750922",
+      "synthetic": false,
+      "target": "720575941432528265",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941612750922",
+      "synthetic": false,
+      "target": "720575941509145950",
+      "weight": 9
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941642542241",
+      "synthetic": false,
+      "target": "720575941408509867",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941642542241",
+      "synthetic": false,
+      "target": "720575941449449294",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941642542241",
+      "synthetic": false,
+      "target": "720575941500579913",
+      "weight": 5
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941642542241",
+      "synthetic": false,
+      "target": "720575941517770412",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941642542241",
+      "synthetic": false,
+      "target": "720575941530169803",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941642542241",
+      "synthetic": false,
+      "target": "720575941590734443",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "720575941652023317",
+      "synthetic": false,
+      "target": "720575941451068597",
+      "weight": 10
+    }
+  ],
+  "nodes": [
+    {
+      "body_id": "720575941408509867",
+      "candidate_male_id": "805525",
+      "category": "ventral_nerve_cord_intrinsic",
+      "id": "720575941408509867",
+      "instance": "IN18B034",
+      "label": "IN18B034 \u00b7 L",
+      "manc_id": null,
+      "manc_type": "IN18B034",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "ventral_nerve_cord_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "L",
+      "slot": 0,
+      "stage": 3,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "IN18B034"
+    },
+    {
+      "body_id": "720575941432528265",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "720575941432528265",
+      "instance": "LC4",
+      "label": "LC4 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 0,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LC4"
+    },
+    {
+      "body_id": "720575941436617870",
+      "candidate_male_id": "517819",
+      "category": "visual_projection",
+      "id": "720575941436617870",
+      "instance": "LPLC2",
+      "label": "LPLC2 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 1,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "720575941437649471",
+      "candidate_male_id": "28044",
+      "category": "visual_projection",
+      "id": "720575941437649471",
+      "instance": "LPLC2",
+      "label": "LPLC2 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 2,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "720575941449449294",
+      "candidate_male_id": "811881",
+      "category": "ventral_nerve_cord_intrinsic",
+      "id": "720575941449449294",
+      "instance": "GFC3",
+      "label": "GFC3 \u00b7 L",
+      "manc_id": null,
+      "manc_type": "GFC3",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "ventral_nerve_cord_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "L",
+      "slot": 1,
+      "stage": 3,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "GFC3"
+    },
+    {
+      "body_id": "720575941451068597",
+      "candidate_male_id": "10001",
+      "category": "descending",
+      "id": "720575941451068597",
+      "instance": "DNp01",
+      "label": "DNp01 \u00b7 R",
+      "manc_id": null,
+      "manc_type": "DNp01",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "descending",
+      "role": "Descending",
+      "side": "R",
+      "slot": 0,
+      "stage": 2,
+      "status": "TRACING_ISSUE_RESOLVED,REVIEW_MATCH_AN_DN,REMOVE_NERVE_LABEL,FAFB_MATCH_MANUALLY_CHECKED,MANC_MATCH_MANUALLY_CHECKED",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "DNp01"
+    },
+    {
+      "body_id": "720575941468551901",
+      "candidate_male_id": "20808",
+      "category": "visual_projection",
+      "id": "720575941468551901",
+      "instance": "LC4",
+      "label": "LC4 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 3,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LC4"
+    },
+    {
+      "body_id": "720575941475711518",
+      "candidate_male_id": null,
+      "category": "ventral_nerve_cord_intrinsic",
+      "id": "720575941475711518",
+      "instance": "GFC4",
+      "label": "GFC4 \u00b7 R",
+      "manc_id": null,
+      "manc_type": "GFC4",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "ventral_nerve_cord_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "R",
+      "slot": 2,
+      "stage": 3,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "GFC4"
+    },
+    {
+      "body_id": "720575941476218154",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "720575941476218154",
+      "instance": "LPLC2",
+      "label": "LPLC2 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 4,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "720575941476434996",
+      "candidate_male_id": null,
+      "category": "motor",
+      "id": "720575941476434996",
+      "instance": "tergotrochanter_extensor_TT_PDMN",
+      "label": "tergotrochanter_extensor_TT_PDMN \u00b7 L",
+      "manc_id": null,
+      "manc_type": "TTMn",
+      "muscle_mapping": "MANC type annotation: TTMn; not independently reviewed",
+      "nt": "unknown",
+      "region": "Leg motor pool",
+      "role": "Motor",
+      "side": "L",
+      "slot": 0,
+      "stage": 4,
+      "status": "azevedo,FANC_ALT_MATCH,HAS_MANUAL_ANNOTATION,MANC_ALT_MATCH,LR_TYPE_CONFLICT",
+      "synthetic": false,
+      "transmitter": "octopamine",
+      "type": "tergotrochanter_extensor_TT_PDMN"
+    },
+    {
+      "body_id": "720575941494320304",
+      "candidate_male_id": "20799",
+      "category": "visual_projection",
+      "id": "720575941494320304",
+      "instance": "LPLC2",
+      "label": "LPLC2 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 5,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "720575941495634816",
+      "candidate_male_id": "910170",
+      "category": "ventral_nerve_cord_intrinsic",
+      "id": "720575941495634816",
+      "instance": "GFC4",
+      "label": "GFC4 \u00b7 R",
+      "manc_id": null,
+      "manc_type": "GFC4",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "ventral_nerve_cord_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "R",
+      "slot": 3,
+      "stage": 3,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "GFC4"
+    },
+    {
+      "body_id": "720575941497009058",
+      "candidate_male_id": "800254",
+      "category": "ventral_nerve_cord_intrinsic",
+      "id": "720575941497009058",
+      "instance": "IN06B008",
+      "label": "IN06B008 \u00b7 L",
+      "manc_id": null,
+      "manc_type": "IN06B008",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "ventral_nerve_cord_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "L",
+      "slot": 4,
+      "stage": 3,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "gaba",
+      "type": "IN06B008"
+    },
+    {
+      "body_id": "720575941500579913",
+      "candidate_male_id": null,
+      "category": "motor",
+      "id": "720575941500579913",
+      "instance": "tergotrochanter_extensor_TT",
+      "label": "tergotrochanter_extensor_TT \u00b7 R",
+      "manc_id": null,
+      "manc_type": "TTMn",
+      "muscle_mapping": "MANC type annotation: TTMn; not independently reviewed",
+      "nt": "unknown",
+      "region": "Leg motor pool",
+      "role": "Motor",
+      "side": "R",
+      "slot": 1,
+      "stage": 4,
+      "status": "azevedo,FANC_ALT_MATCH,HAS_MANUAL_ANNOTATION,MANC_ALT_MATCH,LR_TYPE_CONFLICT",
+      "synthetic": false,
+      "transmitter": "gaba",
+      "type": "tergotrochanter_extensor_TT"
+    },
+    {
+      "body_id": "720575941509145950",
+      "candidate_male_id": "10010",
+      "category": "descending",
+      "id": "720575941509145950",
+      "instance": "DNp01",
+      "label": "DNp01 \u00b7 L",
+      "manc_id": null,
+      "manc_type": "DNp01",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "descending",
+      "role": "Descending",
+      "side": "L",
+      "slot": 1,
+      "stage": 2,
+      "status": "REVIEW_MATCH_AN_DN,FAFB_MATCH_MANUALLY_CHECKED,MANC_MATCH_MANUALLY_CHECKED",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "DNp01"
+    },
+    {
+      "body_id": "720575941510443986",
+      "candidate_male_id": "18672",
+      "category": "visual_projection",
+      "id": "720575941510443986",
+      "instance": "LPLC2",
+      "label": "LPLC2 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 6,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "720575941511886412",
+      "candidate_male_id": "31988",
+      "category": "visual_projection",
+      "id": "720575941511886412",
+      "instance": "LPLC2",
+      "label": "LPLC2 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 7,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "720575941517770412",
+      "candidate_male_id": "804856",
+      "category": "ventral_nerve_cord_intrinsic",
+      "id": "720575941517770412",
+      "instance": "IN18B034",
+      "label": "IN18B034 \u00b7 R",
+      "manc_id": null,
+      "manc_type": "IN18B034",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "ventral_nerve_cord_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "R",
+      "slot": 5,
+      "stage": 3,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "IN18B034"
+    },
+    {
+      "body_id": "720575941530169803",
+      "candidate_male_id": "800385",
+      "category": "ventral_nerve_cord_intrinsic",
+      "id": "720575941530169803",
+      "instance": "GFC3",
+      "label": "GFC3 \u00b7 L",
+      "manc_id": null,
+      "manc_type": "GFC3",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "ventral_nerve_cord_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "L",
+      "slot": 6,
+      "stage": 3,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "GFC3"
+    },
+    {
+      "body_id": "720575941530742475",
+      "candidate_male_id": "20182",
+      "category": "visual_projection",
+      "id": "720575941530742475",
+      "instance": "LPLC2",
+      "label": "LPLC2 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 8,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "720575941559285619",
+      "candidate_male_id": "902784",
+      "category": "ventral_nerve_cord_intrinsic",
+      "id": "720575941559285619",
+      "instance": "GFC3",
+      "label": "GFC3 \u00b7 R",
+      "manc_id": null,
+      "manc_type": "GFC3",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "ventral_nerve_cord_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "R",
+      "slot": 7,
+      "stage": 3,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "GFC3"
+    },
+    {
+      "body_id": "720575941564627766",
+      "candidate_male_id": "805095",
+      "category": "ventral_nerve_cord_intrinsic",
+      "id": "720575941564627766",
+      "instance": "GFC4",
+      "label": "GFC4 \u00b7 L",
+      "manc_id": null,
+      "manc_type": "GFC4",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "ventral_nerve_cord_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "L",
+      "slot": 8,
+      "stage": 3,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "GFC4"
+    },
+    {
+      "body_id": "720575941569787130",
+      "candidate_male_id": "516909",
+      "category": "visual_projection",
+      "id": "720575941569787130",
+      "instance": "LC4",
+      "label": "LC4 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 9,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LC4"
+    },
+    {
+      "body_id": "720575941575071560",
+      "candidate_male_id": "524899",
+      "category": "visual_projection",
+      "id": "720575941575071560",
+      "instance": "LC4",
+      "label": "LC4 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 10,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LC4"
+    },
+    {
+      "body_id": "720575941575610201",
+      "candidate_male_id": "20282",
+      "category": "visual_projection",
+      "id": "720575941575610201",
+      "instance": "LC4",
+      "label": "LC4 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 11,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LC4"
+    },
+    {
+      "body_id": "720575941582578527",
+      "candidate_male_id": "21287",
+      "category": "visual_projection",
+      "id": "720575941582578527",
+      "instance": "LC4",
+      "label": "LC4 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 12,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LC4"
+    },
+    {
+      "body_id": "720575941587015814",
+      "candidate_male_id": "515971",
+      "category": "visual_projection",
+      "id": "720575941587015814",
+      "instance": "LPLC2",
+      "label": "LPLC2 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 13,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "720575941590734443",
+      "candidate_male_id": "802595",
+      "category": "ventral_nerve_cord_intrinsic",
+      "id": "720575941590734443",
+      "instance": "GFC2",
+      "label": "GFC2 \u00b7 L",
+      "manc_id": null,
+      "manc_type": "GFC2",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "ventral_nerve_cord_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "L",
+      "slot": 9,
+      "stage": 3,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "GFC2"
+    },
+    {
+      "body_id": "720575941602261182",
+      "candidate_male_id": "909038",
+      "category": "ventral_nerve_cord_intrinsic",
+      "id": "720575941602261182",
+      "instance": "IN11A040",
+      "label": "IN11A040 \u00b7 R",
+      "manc_id": null,
+      "manc_type": "IN11A040",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "ventral_nerve_cord_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "R",
+      "slot": 10,
+      "stage": 3,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "IN11A040"
+    },
+    {
+      "body_id": "720575941612750922",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "720575941612750922",
+      "instance": "LC4",
+      "label": "LC4 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 14,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LC4"
+    },
+    {
+      "body_id": "720575941642542241",
+      "candidate_male_id": "905139",
+      "category": "ventral_nerve_cord_intrinsic",
+      "id": "720575941642542241",
+      "instance": "IN18B031",
+      "label": "IN18B031 \u00b7 L",
+      "manc_id": null,
+      "manc_type": "IN18B031",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "ventral_nerve_cord_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "L",
+      "slot": 11,
+      "stage": 3,
+      "status": "LR_TYPE_CONFLICT",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "IN18B031"
+    },
+    {
+      "body_id": "720575941652023317",
+      "candidate_male_id": "17668",
+      "category": "visual_projection",
+      "id": "720575941652023317",
+      "instance": "LC4",
+      "label": "LC4 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 15,
+      "stage": 0,
+      "status": "",
+      "synthetic": false,
+      "transmitter": "acetylcholine",
+      "type": "LC4"
+    }
+  ],
+  "provenance": {
+    "biological_validation": "structural-only",
+    "caveat": "This shows structural connectivity, not proven behavioral function.",
+    "dataset": "BANC",
+    "license": "CC BY 4.0; attribute the dataset authors",
+    "limitations": [
+      "Selection-biased bounded snapshot, not a complete escape circuit.",
+      "Four strongest LC4 and LPLC2 inputs per GF, six strongest VNC intrinsic outputs per GF, plus TTMn.",
+      "Only chemical connectivity is included; gap junctions, receptor physiology and dynamics are omitted.",
+      "Transmitter sign is unknown, not inferred from a predicted transmitter label.",
+      "MaleCNS confidence filtering and BANC synapse-size filtering are not equivalent.",
+      "BANC match annotations may refer to MaleCNS v0.9; no v1.0 identity validation or navis registration was performed.",
+      "One specimen per sex cannot establish population-level sex effects."
+    ],
+    "mode": "release",
+    "sources": {
+      "edges": {
+        "bytes": 359161658,
+        "sha256": "8c296e946f3c69a8c7222f30ad75fa8a98eeb189124fec6df829c9125f4be64b",
+        "url": "https://storage.googleapis.com/lee-lab_brain-and-nerve-cord-fly-connectome/compiled_data/banc_888/banc_888_edgelist_simple_v3.feather"
+      },
+      "nodes": {
+        "bytes": 66586415,
+        "sha256": "4dde2e6503e59a79e1e8f46e32687de09e8b595e5bd48f7353829fb713c9761a",
+        "url": "https://raw.githubusercontent.com/htem/BANC-project/main/data/meta/banc_888_meta_20260521.parquet"
+      }
+    },
+    "version": "v888 \u00b7 synapses v3 \u00b7 size \u226510"
+  },
+  "species": "female",
+  "validation": [
+    {
+      "body_id": "720575941451068597",
+      "incoming_synapses": 3554,
+      "presynaptic_bodies": 603
+    },
+    {
+      "body_id": "720575941509145950",
+      "incoming_synapses": 3859,
+      "presynaptic_bodies": 516
+    }
+  ]
+}

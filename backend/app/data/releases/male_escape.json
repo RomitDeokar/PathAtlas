@@ -1,0 +1,1870 @@
+{
+  "circuit": "escape",
+  "default_source": "20182",
+  "edges": [
+    {
+      "sign": "unknown",
+      "source": "10001",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "10001",
+      "synthetic": false,
+      "target": "20269",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "10001",
+      "synthetic": false,
+      "target": "800146",
+      "weight": 70
+    },
+    {
+      "sign": "unknown",
+      "source": "10001",
+      "synthetic": false,
+      "target": "800178",
+      "weight": 32
+    },
+    {
+      "sign": "unknown",
+      "source": "10001",
+      "synthetic": false,
+      "target": "800595",
+      "weight": 21
+    },
+    {
+      "sign": "unknown",
+      "source": "10001",
+      "synthetic": false,
+      "target": "801805",
+      "weight": 26
+    },
+    {
+      "sign": "unknown",
+      "source": "10001",
+      "synthetic": false,
+      "target": "802471",
+      "weight": 26
+    },
+    {
+      "sign": "unknown",
+      "source": "10001",
+      "synthetic": false,
+      "target": "802551",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "10001",
+      "synthetic": false,
+      "target": "802595",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "10001",
+      "synthetic": false,
+      "target": "802681",
+      "weight": 18
+    },
+    {
+      "sign": "unknown",
+      "source": "10001",
+      "synthetic": false,
+      "target": "802799",
+      "weight": 21
+    },
+    {
+      "sign": "unknown",
+      "source": "10001",
+      "synthetic": false,
+      "target": "804856",
+      "weight": 24
+    },
+    {
+      "sign": "unknown",
+      "source": "10001",
+      "synthetic": false,
+      "target": "805525",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "10001",
+      "synthetic": false,
+      "target": "812963",
+      "weight": 5
+    },
+    {
+      "sign": "unknown",
+      "source": "10010",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "10010",
+      "synthetic": false,
+      "target": "20859",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "10010",
+      "synthetic": false,
+      "target": "22253",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "10010",
+      "synthetic": false,
+      "target": "800178",
+      "weight": 11
+    },
+    {
+      "sign": "unknown",
+      "source": "10010",
+      "synthetic": false,
+      "target": "800595",
+      "weight": 16
+    },
+    {
+      "sign": "unknown",
+      "source": "10010",
+      "synthetic": false,
+      "target": "801805",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "10010",
+      "synthetic": false,
+      "target": "802471",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "10010",
+      "synthetic": false,
+      "target": "802551",
+      "weight": 20
+    },
+    {
+      "sign": "unknown",
+      "source": "10010",
+      "synthetic": false,
+      "target": "802595",
+      "weight": 29
+    },
+    {
+      "sign": "unknown",
+      "source": "10010",
+      "synthetic": false,
+      "target": "802681",
+      "weight": 21
+    },
+    {
+      "sign": "unknown",
+      "source": "10010",
+      "synthetic": false,
+      "target": "804642",
+      "weight": 20
+    },
+    {
+      "sign": "unknown",
+      "source": "10010",
+      "synthetic": false,
+      "target": "804856",
+      "weight": 22
+    },
+    {
+      "sign": "unknown",
+      "source": "10010",
+      "synthetic": false,
+      "target": "805525",
+      "weight": 23
+    },
+    {
+      "sign": "unknown",
+      "source": "10010",
+      "synthetic": false,
+      "target": "812963",
+      "weight": 23
+    },
+    {
+      "sign": "unknown",
+      "source": "16128",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 65
+    },
+    {
+      "sign": "unknown",
+      "source": "16128",
+      "synthetic": false,
+      "target": "17668",
+      "weight": 7
+    },
+    {
+      "sign": "unknown",
+      "source": "16128",
+      "synthetic": false,
+      "target": "20182",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "17478",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 86
+    },
+    {
+      "sign": "unknown",
+      "source": "17478",
+      "synthetic": false,
+      "target": "17653",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "17478",
+      "synthetic": false,
+      "target": "20859",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "17653",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 83
+    },
+    {
+      "sign": "unknown",
+      "source": "17653",
+      "synthetic": false,
+      "target": "17478",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "17653",
+      "synthetic": false,
+      "target": "20859",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "17653",
+      "synthetic": false,
+      "target": "518439",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "17668",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 63
+    },
+    {
+      "sign": "unknown",
+      "source": "17668",
+      "synthetic": false,
+      "target": "16128",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "17668",
+      "synthetic": false,
+      "target": "20103",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "17668",
+      "synthetic": false,
+      "target": "24338",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "19608",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 49
+    },
+    {
+      "sign": "unknown",
+      "source": "19608",
+      "synthetic": false,
+      "target": "17668",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "19608",
+      "synthetic": false,
+      "target": "20103",
+      "weight": 8
+    },
+    {
+      "sign": "unknown",
+      "source": "19608",
+      "synthetic": false,
+      "target": "20182",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "19608",
+      "synthetic": false,
+      "target": "20269",
+      "weight": 11
+    },
+    {
+      "sign": "unknown",
+      "source": "19787",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 55
+    },
+    {
+      "sign": "unknown",
+      "source": "19787",
+      "synthetic": false,
+      "target": "22253",
+      "weight": 9
+    },
+    {
+      "sign": "unknown",
+      "source": "19787",
+      "synthetic": false,
+      "target": "22557",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "19787",
+      "synthetic": false,
+      "target": "31563",
+      "weight": 9
+    },
+    {
+      "sign": "unknown",
+      "source": "20103",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 48
+    },
+    {
+      "sign": "unknown",
+      "source": "20103",
+      "synthetic": false,
+      "target": "17668",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "20103",
+      "synthetic": false,
+      "target": "19608",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "20103",
+      "synthetic": false,
+      "target": "20182",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "20103",
+      "synthetic": false,
+      "target": "20269",
+      "weight": 9
+    },
+    {
+      "sign": "unknown",
+      "source": "20182",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 59
+    },
+    {
+      "sign": "unknown",
+      "source": "20182",
+      "synthetic": false,
+      "target": "16128",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "20182",
+      "synthetic": false,
+      "target": "19608",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "20182",
+      "synthetic": false,
+      "target": "20103",
+      "weight": 7
+    },
+    {
+      "sign": "unknown",
+      "source": "20182",
+      "synthetic": false,
+      "target": "20269",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "20269",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 53
+    },
+    {
+      "sign": "unknown",
+      "source": "20269",
+      "synthetic": false,
+      "target": "19608",
+      "weight": 9
+    },
+    {
+      "sign": "unknown",
+      "source": "20269",
+      "synthetic": false,
+      "target": "20103",
+      "weight": 11
+    },
+    {
+      "sign": "unknown",
+      "source": "20269",
+      "synthetic": false,
+      "target": "20182",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "20859",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 81
+    },
+    {
+      "sign": "unknown",
+      "source": "20859",
+      "synthetic": false,
+      "target": "17478",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "20859",
+      "synthetic": false,
+      "target": "17653",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "22253",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 60
+    },
+    {
+      "sign": "unknown",
+      "source": "22253",
+      "synthetic": false,
+      "target": "19787",
+      "weight": 8
+    },
+    {
+      "sign": "unknown",
+      "source": "22253",
+      "synthetic": false,
+      "target": "22557",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "22253",
+      "synthetic": false,
+      "target": "31563",
+      "weight": 5
+    },
+    {
+      "sign": "unknown",
+      "source": "22557",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 54
+    },
+    {
+      "sign": "unknown",
+      "source": "22557",
+      "synthetic": false,
+      "target": "19787",
+      "weight": 11
+    },
+    {
+      "sign": "unknown",
+      "source": "22557",
+      "synthetic": false,
+      "target": "22253",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "22557",
+      "synthetic": false,
+      "target": "31563",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "22847",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 67
+    },
+    {
+      "sign": "unknown",
+      "source": "22847",
+      "synthetic": false,
+      "target": "16128",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "22847",
+      "synthetic": false,
+      "target": "17668",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "22847",
+      "synthetic": false,
+      "target": "24338",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "24338",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 63
+    },
+    {
+      "sign": "unknown",
+      "source": "24338",
+      "synthetic": false,
+      "target": "17668",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "24338",
+      "synthetic": false,
+      "target": "22847",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "31563",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 64
+    },
+    {
+      "sign": "unknown",
+      "source": "31563",
+      "synthetic": false,
+      "target": "19787",
+      "weight": 12
+    },
+    {
+      "sign": "unknown",
+      "source": "31563",
+      "synthetic": false,
+      "target": "22253",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "31563",
+      "synthetic": false,
+      "target": "22557",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "518439",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 82
+    },
+    {
+      "sign": "unknown",
+      "source": "518439",
+      "synthetic": false,
+      "target": "17478",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "800146",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "800178",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 10
+    },
+    {
+      "sign": "unknown",
+      "source": "800178",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 9
+    },
+    {
+      "sign": "unknown",
+      "source": "800178",
+      "synthetic": false,
+      "target": "801805",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "800595",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 5
+    },
+    {
+      "sign": "unknown",
+      "source": "800595",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "800595",
+      "synthetic": false,
+      "target": "802595",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "800595",
+      "synthetic": false,
+      "target": "804856",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "801805",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "801805",
+      "synthetic": false,
+      "target": "800178",
+      "weight": 5
+    },
+    {
+      "sign": "unknown",
+      "source": "802471",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "802471",
+      "synthetic": false,
+      "target": "800595",
+      "weight": 15
+    },
+    {
+      "sign": "unknown",
+      "source": "802471",
+      "synthetic": false,
+      "target": "802551",
+      "weight": 70
+    },
+    {
+      "sign": "unknown",
+      "source": "802471",
+      "synthetic": false,
+      "target": "802595",
+      "weight": 25
+    },
+    {
+      "sign": "unknown",
+      "source": "802471",
+      "synthetic": false,
+      "target": "802681",
+      "weight": 12
+    },
+    {
+      "sign": "unknown",
+      "source": "802471",
+      "synthetic": false,
+      "target": "802799",
+      "weight": 5
+    },
+    {
+      "sign": "unknown",
+      "source": "802471",
+      "synthetic": false,
+      "target": "804642",
+      "weight": 11
+    },
+    {
+      "sign": "unknown",
+      "source": "802471",
+      "synthetic": false,
+      "target": "804856",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "802471",
+      "synthetic": false,
+      "target": "805525",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "802471",
+      "synthetic": false,
+      "target": "812963",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "802551",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "802551",
+      "synthetic": false,
+      "target": "802595",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "802551",
+      "synthetic": false,
+      "target": "802799",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "802551",
+      "synthetic": false,
+      "target": "804642",
+      "weight": 120
+    },
+    {
+      "sign": "unknown",
+      "source": "802551",
+      "synthetic": false,
+      "target": "804856",
+      "weight": 7
+    },
+    {
+      "sign": "unknown",
+      "source": "802551",
+      "synthetic": false,
+      "target": "805525",
+      "weight": 8
+    },
+    {
+      "sign": "unknown",
+      "source": "802595",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "802595",
+      "synthetic": false,
+      "target": "800146",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "802595",
+      "synthetic": false,
+      "target": "801805",
+      "weight": 5
+    },
+    {
+      "sign": "unknown",
+      "source": "802595",
+      "synthetic": false,
+      "target": "802471",
+      "weight": 10
+    },
+    {
+      "sign": "unknown",
+      "source": "802595",
+      "synthetic": false,
+      "target": "802551",
+      "weight": 7
+    },
+    {
+      "sign": "unknown",
+      "source": "802595",
+      "synthetic": false,
+      "target": "802681",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "802595",
+      "synthetic": false,
+      "target": "802799",
+      "weight": 9
+    },
+    {
+      "sign": "unknown",
+      "source": "802595",
+      "synthetic": false,
+      "target": "804642",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "802595",
+      "synthetic": false,
+      "target": "804856",
+      "weight": 7
+    },
+    {
+      "sign": "unknown",
+      "source": "802595",
+      "synthetic": false,
+      "target": "805525",
+      "weight": 11
+    },
+    {
+      "sign": "unknown",
+      "source": "802595",
+      "synthetic": false,
+      "target": "812963",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "802681",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "802681",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "802681",
+      "synthetic": false,
+      "target": "800178",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "802681",
+      "synthetic": false,
+      "target": "800595",
+      "weight": 5
+    },
+    {
+      "sign": "unknown",
+      "source": "802681",
+      "synthetic": false,
+      "target": "802799",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "802799",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "802799",
+      "synthetic": false,
+      "target": "800146",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "802799",
+      "synthetic": false,
+      "target": "800595",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "802799",
+      "synthetic": false,
+      "target": "802471",
+      "weight": 9
+    },
+    {
+      "sign": "unknown",
+      "source": "802799",
+      "synthetic": false,
+      "target": "802551",
+      "weight": 87
+    },
+    {
+      "sign": "unknown",
+      "source": "802799",
+      "synthetic": false,
+      "target": "802595",
+      "weight": 20
+    },
+    {
+      "sign": "unknown",
+      "source": "802799",
+      "synthetic": false,
+      "target": "802681",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "802799",
+      "synthetic": false,
+      "target": "804642",
+      "weight": 5
+    },
+    {
+      "sign": "unknown",
+      "source": "802799",
+      "synthetic": false,
+      "target": "804856",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "802799",
+      "synthetic": false,
+      "target": "805525",
+      "weight": 5
+    },
+    {
+      "sign": "unknown",
+      "source": "802799",
+      "synthetic": false,
+      "target": "812963",
+      "weight": 11
+    },
+    {
+      "sign": "unknown",
+      "source": "804642",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "804642",
+      "synthetic": false,
+      "target": "802551",
+      "weight": 15
+    },
+    {
+      "sign": "unknown",
+      "source": "804642",
+      "synthetic": false,
+      "target": "802595",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "804856",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "804856",
+      "synthetic": false,
+      "target": "800146",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "804856",
+      "synthetic": false,
+      "target": "800178",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "804856",
+      "synthetic": false,
+      "target": "800595",
+      "weight": 9
+    },
+    {
+      "sign": "unknown",
+      "source": "804856",
+      "synthetic": false,
+      "target": "801805",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "804856",
+      "synthetic": false,
+      "target": "802471",
+      "weight": 4
+    },
+    {
+      "sign": "unknown",
+      "source": "804856",
+      "synthetic": false,
+      "target": "802551",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "804856",
+      "synthetic": false,
+      "target": "802595",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "804856",
+      "synthetic": false,
+      "target": "802681",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "804856",
+      "synthetic": false,
+      "target": "802799",
+      "weight": 17
+    },
+    {
+      "sign": "unknown",
+      "source": "804856",
+      "synthetic": false,
+      "target": "805525",
+      "weight": 15
+    },
+    {
+      "sign": "unknown",
+      "source": "805525",
+      "synthetic": false,
+      "target": "10010",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "805525",
+      "synthetic": false,
+      "target": "800178",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "805525",
+      "synthetic": false,
+      "target": "800595",
+      "weight": 6
+    },
+    {
+      "sign": "unknown",
+      "source": "805525",
+      "synthetic": false,
+      "target": "801805",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "805525",
+      "synthetic": false,
+      "target": "802551",
+      "weight": 22
+    },
+    {
+      "sign": "unknown",
+      "source": "805525",
+      "synthetic": false,
+      "target": "802595",
+      "weight": 25
+    },
+    {
+      "sign": "unknown",
+      "source": "805525",
+      "synthetic": false,
+      "target": "802681",
+      "weight": 1
+    },
+    {
+      "sign": "unknown",
+      "source": "805525",
+      "synthetic": false,
+      "target": "804642",
+      "weight": 3
+    },
+    {
+      "sign": "unknown",
+      "source": "805525",
+      "synthetic": false,
+      "target": "804856",
+      "weight": 15
+    },
+    {
+      "sign": "unknown",
+      "source": "812963",
+      "synthetic": false,
+      "target": "10001",
+      "weight": 2
+    },
+    {
+      "sign": "unknown",
+      "source": "812963",
+      "synthetic": false,
+      "target": "800595",
+      "weight": 2
+    }
+  ],
+  "nodes": [
+    {
+      "body_id": "10001",
+      "candidate_male_id": null,
+      "category": "descending_neuron",
+      "id": "10001",
+      "instance": "DNp01(GF)_R",
+      "label": "DNp01 \u00b7 R",
+      "manc_id": 10000,
+      "manc_type": "DNp01",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "descending_neuron",
+      "role": "Descending",
+      "side": "R",
+      "slot": 0,
+      "stage": 2,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "DNp01"
+    },
+    {
+      "body_id": "10010",
+      "candidate_male_id": null,
+      "category": "descending_neuron",
+      "id": "10010",
+      "instance": "DNp01(GF)_L",
+      "label": "DNp01 \u00b7 L",
+      "manc_id": 10002,
+      "manc_type": "DNp01",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "descending_neuron",
+      "role": "Descending",
+      "side": "L",
+      "slot": 1,
+      "stage": 2,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "DNp01"
+    },
+    {
+      "body_id": "16128",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "16128",
+      "instance": "LC4_R",
+      "label": "LC4 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 0,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LC4"
+    },
+    {
+      "body_id": "17478",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "17478",
+      "instance": "LC4_L",
+      "label": "LC4 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 1,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LC4"
+    },
+    {
+      "body_id": "17653",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "17653",
+      "instance": "LC4_L",
+      "label": "LC4 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 2,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LC4"
+    },
+    {
+      "body_id": "17668",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "17668",
+      "instance": "LC4_R",
+      "label": "LC4 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 3,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LC4"
+    },
+    {
+      "body_id": "19608",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "19608",
+      "instance": "LPLC2_R",
+      "label": "LPLC2 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 4,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "19787",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "19787",
+      "instance": "LPLC2_L",
+      "label": "LPLC2 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 5,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "20103",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "20103",
+      "instance": "LPLC2_R",
+      "label": "LPLC2 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 6,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "20182",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "20182",
+      "instance": "LPLC2_R",
+      "label": "LPLC2 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 7,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "20269",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "20269",
+      "instance": "LPLC2_R",
+      "label": "LPLC2 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 8,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "20859",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "20859",
+      "instance": "LC4_L",
+      "label": "LC4 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 9,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LC4"
+    },
+    {
+      "body_id": "22253",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "22253",
+      "instance": "LPLC2_L",
+      "label": "LPLC2 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 10,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "22557",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "22557",
+      "instance": "LPLC2_L",
+      "label": "LPLC2 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 11,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "22847",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "22847",
+      "instance": "LC4_R",
+      "label": "LC4 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 12,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LC4"
+    },
+    {
+      "body_id": "24338",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "24338",
+      "instance": "LC4_R",
+      "label": "LC4 \u00b7 R",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "R",
+      "slot": 13,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LC4"
+    },
+    {
+      "body_id": "31563",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "31563",
+      "instance": "LPLC2_L",
+      "label": "LPLC2 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 14,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LPLC2"
+    },
+    {
+      "body_id": "518439",
+      "candidate_male_id": null,
+      "category": "visual_projection",
+      "id": "518439",
+      "instance": "LC4_L",
+      "label": "LC4 \u00b7 L",
+      "manc_id": null,
+      "manc_type": null,
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "visual_projection",
+      "role": "Visual projection",
+      "side": "L",
+      "slot": 15,
+      "stage": 0,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "LC4"
+    },
+    {
+      "body_id": "800146",
+      "candidate_male_id": null,
+      "category": "vnc_motor",
+      "id": "800146",
+      "instance": "TTMn_R",
+      "label": "TTMn \u00b7 R",
+      "manc_id": 10110,
+      "manc_type": "TTMn",
+      "muscle_mapping": "MANC type annotation: TTMn; not independently reviewed",
+      "nt": "unknown",
+      "region": "Leg motor pool",
+      "role": "Motor",
+      "side": "R",
+      "slot": 0,
+      "stage": 4,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "TTMn"
+    },
+    {
+      "body_id": "800178",
+      "candidate_male_id": null,
+      "category": "vnc_intrinsic",
+      "id": "800178",
+      "instance": "IN11A001_R",
+      "label": "IN11A001 \u00b7 R",
+      "manc_id": 10085,
+      "manc_type": "IN11A001",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "vnc_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "R",
+      "slot": 0,
+      "stage": 3,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "IN11A001"
+    },
+    {
+      "body_id": "800595",
+      "candidate_male_id": null,
+      "category": "vnc_intrinsic",
+      "id": "800595",
+      "instance": "IN06B008_R",
+      "label": "IN06B008 \u00b7 R",
+      "manc_id": 10807,
+      "manc_type": "IN06B008",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "vnc_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "R",
+      "slot": 1,
+      "stage": 3,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "IN06B008"
+    },
+    {
+      "body_id": "801805",
+      "candidate_male_id": null,
+      "category": "vnc_intrinsic",
+      "id": "801805",
+      "instance": "IN08B003_R",
+      "label": "IN08B003 \u00b7 R",
+      "manc_id": 10391,
+      "manc_type": "IN08B003",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "vnc_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "R",
+      "slot": 2,
+      "stage": 3,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "IN08B003"
+    },
+    {
+      "body_id": "802471",
+      "candidate_male_id": null,
+      "category": "vnc_intrinsic",
+      "id": "802471",
+      "instance": "IN18B031_R",
+      "label": "IN18B031 \u00b7 R",
+      "manc_id": 19834,
+      "manc_type": "IN18B031",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "vnc_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "R",
+      "slot": 3,
+      "stage": 3,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "IN18B031"
+    },
+    {
+      "body_id": "802551",
+      "candidate_male_id": null,
+      "category": "vnc_intrinsic",
+      "id": "802551",
+      "instance": "GFC2_L",
+      "label": "GFC2 \u00b7 L",
+      "manc_id": 15292,
+      "manc_type": "GFC2",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "vnc_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "L",
+      "slot": 4,
+      "stage": 3,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "GFC2"
+    },
+    {
+      "body_id": "802595",
+      "candidate_male_id": null,
+      "category": "vnc_intrinsic",
+      "id": "802595",
+      "instance": "GFC2_L",
+      "label": "GFC2 \u00b7 L",
+      "manc_id": 17245,
+      "manc_type": "GFC2",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "vnc_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "L",
+      "slot": 5,
+      "stage": 3,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "GFC2"
+    },
+    {
+      "body_id": "802681",
+      "candidate_male_id": null,
+      "category": "vnc_intrinsic",
+      "id": "802681",
+      "instance": "IN06B008_L",
+      "label": "IN06B008 \u00b7 L",
+      "manc_id": 10950,
+      "manc_type": "IN06B008",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "vnc_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "L",
+      "slot": 6,
+      "stage": 3,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "IN06B008"
+    },
+    {
+      "body_id": "802799",
+      "candidate_male_id": null,
+      "category": "vnc_intrinsic",
+      "id": "802799",
+      "instance": "GFC2_R",
+      "label": "GFC2 \u00b7 R",
+      "manc_id": 15505,
+      "manc_type": "GFC2",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "vnc_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "R",
+      "slot": 7,
+      "stage": 3,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "GFC2"
+    },
+    {
+      "body_id": "804642",
+      "candidate_male_id": null,
+      "category": "vnc_motor",
+      "id": "804642",
+      "instance": "TTMn_L",
+      "label": "TTMn \u00b7 L",
+      "manc_id": 10068,
+      "manc_type": "TTMn",
+      "muscle_mapping": "MANC type annotation: TTMn; not independently reviewed",
+      "nt": "unknown",
+      "region": "Leg motor pool",
+      "role": "Motor",
+      "side": "L",
+      "slot": 1,
+      "stage": 4,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "TTMn"
+    },
+    {
+      "body_id": "804856",
+      "candidate_male_id": null,
+      "category": "vnc_intrinsic",
+      "id": "804856",
+      "instance": "IN18B034_R",
+      "label": "IN18B034 \u00b7 R",
+      "manc_id": 15556,
+      "manc_type": "IN18B034",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "vnc_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "R",
+      "slot": 8,
+      "stage": 3,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "IN18B034"
+    },
+    {
+      "body_id": "805525",
+      "candidate_male_id": null,
+      "category": "vnc_intrinsic",
+      "id": "805525",
+      "instance": "IN18B034_L",
+      "label": "IN18B034 \u00b7 L",
+      "manc_id": 17394,
+      "manc_type": "IN18B034",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "vnc_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "L",
+      "slot": 9,
+      "stage": 3,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "IN18B034"
+    },
+    {
+      "body_id": "812963",
+      "candidate_male_id": null,
+      "category": "vnc_intrinsic",
+      "id": "812963",
+      "instance": "GFC4_L",
+      "label": "GFC4 \u00b7 L",
+      "manc_id": 27502,
+      "manc_type": "GFC4",
+      "muscle_mapping": "Not applicable",
+      "nt": "unknown",
+      "region": "vnc_intrinsic",
+      "role": "VNC intrinsic",
+      "side": "L",
+      "slot": 10,
+      "stage": 3,
+      "status": "Traced",
+      "synthetic": false,
+      "transmitter": null,
+      "type": "GFC4"
+    }
+  ],
+  "provenance": {
+    "biological_validation": "structural-only",
+    "caveat": "This shows structural connectivity, not proven behavioral function.",
+    "dataset": "MaleCNS",
+    "license": "CC BY 4.0; attribute the dataset authors",
+    "limitations": [
+      "Selection-biased bounded snapshot, not a complete escape circuit.",
+      "Four strongest LC4 and LPLC2 inputs per GF, six strongest VNC intrinsic outputs per GF, plus TTMn.",
+      "Only chemical connectivity is included; gap junctions, receptor physiology and dynamics are omitted.",
+      "Transmitter sign is unknown, not inferred from a predicted transmitter label.",
+      "MaleCNS confidence filtering and BANC synapse-size filtering are not equivalent.",
+      "BANC match annotations may refer to MaleCNS v0.9; no v1.0 identity validation or navis registration was performed.",
+      "One specimen per sex cannot establish population-level sex effects."
+    ],
+    "mode": "release",
+    "sources": {
+      "edges": {
+        "bytes": 1051241946,
+        "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+        "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather"
+      },
+      "nodes": {
+        "bytes": 14483314,
+        "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+        "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather"
+      }
+    },
+    "version": "male-cns:v1.0 \u00b7 minconf 0.5"
+  },
+  "species": "male",
+  "validation": [
+    {
+      "body_id": "10001",
+      "incoming_synapses": 18582,
+      "presynaptic_bodies": 2394
+    },
+    {
+      "body_id": "10010",
+      "incoming_synapses": 24896,
+      "presynaptic_bodies": 3407
+    }
+  ]
+}
