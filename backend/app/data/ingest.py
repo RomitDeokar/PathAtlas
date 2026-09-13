@@ -74,10 +74,8 @@ def build(species):
             parquet_from_arrow(path, raw / f'{species}_{name}.parquet')
     with duckdb.connect(config={'memory_limit': '180MB', 'threads': 1}) as db:
         db.execute('SET temp_directory=?', [str(raw / 'duckdb_tmp')])
-        db.execute('CREATE VIEW annotations AS SELECT * FROM read_parquet(?)',
-                   [str(raw / f'{species}_nodes.parquet')])
-        db.execute('CREATE VIEW raw_edges AS SELECT * FROM read_parquet(?)',
-                   [str(raw / f'{species}_edges.parquet')])
+        db.read_parquet(str(raw / f'{species}_nodes.parquet')).create_view('annotations')
+        db.read_parquet(str(raw / f'{species}_edges.parquet')).create_view('raw_edges')
         if species == 'male':
             db.execute('''CREATE VIEW neurons AS SELECT CAST(bodyId AS VARCHAR) AS id,
                 type, instance, superclass AS category, somaSide AS side,

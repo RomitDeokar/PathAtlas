@@ -1,7 +1,7 @@
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-CACHE = ROOT.parent / 'data_cache'
+CACHE = ROOT / 'data_cache'
 CAVEAT = 'This shows structural connectivity, not proven behavioral function.'
 FIXTURE_VERSION = 'synthetic-v1.0'
 MAX_NODES = 4999
