@@ -1,10 +1,10 @@
 export type Species = 'male' | 'female';
 export type Circuit = 'escape' | 'courtship';
 export type Tab = 'explorer' | 'compare' | 'knockout' | 'simulation' | 'evidence';
-export interface Neuron { id: string; label: string; role: string; stage: number; slot: number; region: string; nt: string; body_id: string | null; }
+export interface Neuron { id: string; label: string; role: string; stage: number; slot: number; region: string; nt: string; body_id: string | null; type?: string; side?: string; synthetic?: boolean; muscle_mapping?: string; }
 export interface Edge { source: string; target: string; weight: number; sign: string; }
 export interface Route { rank: number; nodes: string[]; strength: number; cost: number; bottleneck: number; hops: number; }
-export interface Params { source_id: string; target_region: string; species: Species; max_hops: number; top_k: number; min_weight: number; circuit: Circuit; }
+export interface Params { source_id: string; target_region: string; species: Species; max_hops: number; top_k: number; min_weight: number; circuit: Circuit; mode: 'release' | 'synthetic'; }
 export interface Provenance { mode: string; version: string; dataset: string; caveat: string; limitations: string[]; }
 export interface Trace { kind: string; query_id: string; parameters: Params; nodes: Neuron[]; edges: Edge[]; paths: Route[]; targets: string[]; search_truncated: boolean; provenance: Provenance; ranking: string; }
 export interface Lesion { query_id: string; selected: string[]; paths: Route[]; surviving: number; rerouted: number; lost: number; redundancy: number; strength_loss_pct: number; target_reachable: boolean; controls: {n: number; seed: number; mean_loss_pct: number; interval_95: number[]; losses: number[]; mean_degree_mismatch: number; method: string;}; limitation: string; }
@@ -13,6 +13,7 @@ export interface Simulation { query_id: string; engine: string; parameters: {wei
 export interface Sweep {query_id: string; runs: {scheme: string; tau_ms: number; threshold: number; spike_count: number; mean_ipi_ms: number | null}[]; total_runs: number; active_runs: number; conclusions: {label: string; robust: boolean}[]; validation: string; }
 export interface Source {title: string; publisher: string; url: string; kind: string; note: string; }
 export interface Sources {sources: Source[]; gates: {name: string; status: string; detail: string}[]; }
+export interface Dataset { species: Species; available: boolean; reason?: string; nodes?: number; edges?: number; default_source?: string; provenance?: Provenance; }
 export interface Stats {query_id: string; nodes: number; edges: number; reciprocal_pairs: number; feedforward_loops: number; density: number; bottlenecks: {id: string; score: number; degree: number}[]; }
 export async function api<T>(path: string, body?: unknown, signal?: AbortSignal): Promise<T> {
   const response = await fetch(`/api${path}`, {signal, ...(body ? {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)} : {})});

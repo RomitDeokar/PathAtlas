@@ -7,8 +7,8 @@ FIXTURE_VERSION = 'synthetic-v1.0'
 MAX_NODES = 4999
 MAX_EDGES = 30000
 SOURCES = [
-    {'title': 'MaleCNS v1.0', 'publisher': 'HHMI Janelia · Google Research', 'url': 'https://male-cns.janelia.org/', 'kind': 'Primary dataset', 'note': '166,000+ neurons; 125 million synapses. Not loaded in this demo.'},
-    {'title': 'BANC · v888', 'publisher': 'Bates, Phelps, Kim, Yang et al. · Nature, 2026', 'url': 'https://doi.org/10.1038/s41586-026-10735-w', 'kind': 'Primary dataset', 'note': 'Female brain and nerve cord. No curated pathway match loaded.'},
+    {'title': 'MaleCNS v1.0', 'publisher': 'HHMI Janelia · Google Research', 'url': 'https://male-cns.janelia.org/', 'kind': 'Primary dataset', 'note': '166,000+ neurons; 125 million synapses in the full dataset. PathAtlas bundles only an attributed escape-pathway subset.'},
+    {'title': 'BANC · v888', 'publisher': 'Bates, Phelps, Kim, Yang et al. · Nature, 2026', 'url': 'https://doi.org/10.1038/s41586-026-10735-w', 'kind': 'Primary dataset', 'note': 'Female brain and nerve cord. Bounded release subset; annotation-group comparisons are provisional, not validated cell matches.'},
     {'title': 'A connectomics milestone', 'publisher': 'Google Research', 'url': 'https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain/', 'kind': 'Research context', 'note': 'Confirms dataset scope, acquisition process, and links to the primary papers.'},
     {'title': 'Google announcement', 'publisher': 'News from Google · X', 'url': 'https://x.com/NewsFromGoogle/status/2095553014715093022', 'kind': 'Announcement', 'note': 'Context, not independent experimental validation.'},
     {'title': 'The male fly connectome, explained', 'publisher': 'User-supplied video · YouTube', 'url': 'https://www.youtube.com/watch?v=KOwsVDogscY', 'kind': 'Video context', 'note': 'Reviewed for architecture and limitations. Game-controller demos excluded.'},
