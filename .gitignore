@@ -10,3 +10,5 @@ frontend/dist/
 .env.*
 !.env.example
 artifacts/
+
+*.tsbuildinfo
